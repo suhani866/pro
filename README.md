@@ -1,5 +1,7 @@
 📦 Project Name: Pro
+
 🛍️ Responsive Shopping Site with User Authentication
+
 🚀 Overview
 This project is a responsive shopping web application that enables users to browse products and securely log in or sign up. It includes a modern interface, modular JavaScript functionality, and clean separation of styling with external CSS. The design prioritizes user experience and authentication flow.
 
@@ -11,7 +13,9 @@ Authentication UI: Login & Signup pages with modal logic
 Modular Files: Split HTML/CSS/JS for clean structure
 
 🗂️ File Structure
+
 File	Description
+
 index.html	Main homepage layout
 login1.html	Login interface
 signup1.css	Signup page styling
@@ -20,7 +24,9 @@ script.js	JavaScript logic for interactivity
 modal.js	Handles modal pop-ups (e.g. login forms)
 shop.html	Shopping page layout
 package-lock.json	Dependency file for package management
+
 ✨ Features
+
 🔐 Login & Signup UI with modal pop-up support
 
 🎨 Responsive design with clean styling
