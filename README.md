@@ -1,4 +1,4 @@
-📦 Project Name: Pro
+📦 Project Name: responsive-shopping-site
 
 🛍️ Responsive Shopping Site with User Authentication
 
@@ -38,7 +38,7 @@ package-lock.json	Dependency file for package management
 📌 Installation & Usage
 bash
 # Clone the repository
-git clone https://github.com/suhani866/pro.git
+git clone https://github.com/suhani866/responsive-shopping-site.git
 
 # Navigate to the project folder
 cd pro
