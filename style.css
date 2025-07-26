@@ -359,8 +359,13 @@ body {
     border-bottom: 1px solid var(--cultured);
 }
 
-.header-logo { margin-bottom: 20px; }
-    .header-logo img { margin: auto; }
+.header-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
 
 .header-search-container { position: relative; }
 
