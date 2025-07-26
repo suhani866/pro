@@ -4,42 +4,43 @@
     <meta charset="UTF-8" />
     <title>Form2</title>
 
-    <link rel= "stylesheet" href = "Signup1.css">
+    <link rel= "stylesheet" href = "signup.css">
 </head>
 <body>
     <div class="login-container">
-        <h1>SIGN UP</h1>
-        <form name="subproject" method="post">
+        <h1><i class="fas fa-user-plus"></i>SIGN UP</h1>
+        <form action ="#" name="subproject" method="post">
     
             <div class="form-group">
 
-                <label for=" name">Name</label>
+                <label for=" name"><i class="fas fa-user"></i> Name</label>
                 <input type="text" id="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
 
-                <label for=" email">Email</label>
+                <label for=" email"><i class="fas fa-envelope"></i>Email</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
 
-                <label for=" phone">Contact</label>
-                <input type="phone" id="phone" placeholder="Enter your phone number" required>
+                <label for=" phone"><i class="fas fa-phone"></i>Contact</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
-                <label for=" password">Password</label>
-                <input type="password"  id="password" placeholder="Create a password" required>
+                <label for=" password"><i class="fas fa-lock"></i>Password</label>
+                <input type="password"  id="password" placeholder="Use at least 8 characters" required>
                 </div>
                 <button type="submit">Sign Up</button>
                 </form>
-        <p>Already have an account  ? <a href="Login1.html">Login</a></p>
+        <p>Already have an account  ? <a href="login.html">Login</a></p>
    </div>
 
 </body> 
    
 <script>
-    document.querySelector("button[type='submit']").addEventListener("click"), function() {
-        var yourname = document.getElementById("yourname").value;
+    document.querySelector("button[type='submit']").addEventListener("click", function(e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value;
         var password = document.getElementById("password").value;
         var phone = document.getElementById("phone").value;
         var email = document.getElementById("email").value;
@@ -52,7 +53,7 @@
         else {
             console.log("SingUp successful");
         }
-    }
+    });
 </script>
 
 </html>
