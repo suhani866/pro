@@ -42,6 +42,28 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
     mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
     overlay.addEventListener('click', mobileMenuCloseFunc);
 }
+const currencySelector = document.querySelector('select[name="currency"]');
+const priceElements = document.querySelectorAll('.price');
+
+const exchangeRates = {
+  rupees: { symbol: '₹', rate: 83 },
+  usd: { symbol: '$', rate: 1 },
+  eur: { symbol: '€', rate: 0.91 }
+};
+
+currencySelector.addEventListener('change', function () {
+  const selected = this.value;
+  const rate = exchangeRates[selected].rate;
+  const symbol = exchangeRates[selected].symbol;
+
+  priceElements.forEach(price => {
+    // Use base USD stored in data-price attribute
+    const usdValue = parseFloat(price.getAttribute('data-price'));
+    const newValue = (usdValue * rate).toFixed(2);
+    price.textContent = `${symbol}${newValue}`;
+  });
+});
+
 function addToWishlist() {
     const wishlistCountElement = document.getElementById('wishlistCount');
     let count = parseInt(wishlistCountElement.textContent);
