@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Form2</title>
+
+    <link rel= "stylesheet" href = "Signup1.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>SIGN UP</h1>
+        <form name="subproject" method="post">
+    
+            <div class="form-group">
+
+                <label for=" name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+
+                <label for=" email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+
+                <label for=" phone">Contact</label>
+                <input type="phone" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for=" password">Password</label>
+                <input type="password"  id="password" placeholder="Create a password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                </form>
+        <p>Already have an account  ? <a href="Login1.html">Login</a></p>
+   </div>
+
+</body> 
+   
+<script>
+    document.querySelector("button[type='submit']").addEventListener("click"), function() {
+        var yourname = document.getElementById("yourname").value;
+        var password = document.getElementById("password").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+
+        if (yourname === "" || password === "" || phone === "" || email === "")
+             {
+            alert("Plaese enter all details");
+
+            }
+        else {
+            console.log("SingUp successful");
+        }
+    }
+</script>
+
+</html>
